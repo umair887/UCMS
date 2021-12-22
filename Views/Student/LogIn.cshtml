@@ -1,0 +1,21 @@
+﻿@model Student_Managment_System.Models.Student
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+<h5 class="bg-dark text-white p-2" > Log In</h5>
+
+<form method="post" action="LogIn">
+
+    <div>
+        <label class="form-label" asp-for="Name"></label><br>
+        <input class="form-control" asp-for="Name"><br>
+        <span asp-validation-for="Name"></span>
+    </div>
+    <div>
+        <label class="form-label" asp-for="Password"></label><br>
+        <input class="form-control" asp-for="Password"><br>
+        <span asp-validation-for="Password"></span>
+    </div>
+
+</form>
